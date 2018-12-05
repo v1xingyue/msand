@@ -21,7 +21,7 @@ except Exception as ex:
 #HEALTH_CHECK_INTERVAL = 0.3
 def worker(interval,task_queue):
 	ppid = os.getppid()
-	setproctitle.setproctitle("msand worker")	
+	setproctitle.setproctitle("%s worker" % (MASTER_NAME))	
 	while True:
 		time.sleep(interval)
 		run_task_data(task_queue)
