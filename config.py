@@ -2,8 +2,6 @@
 
 import os
 import logging
-import psutil
-import setproctitle
 import time 
 import random
 
